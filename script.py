@@ -15,14 +15,14 @@ if __name__ == '__main__':
             location=company['location'],
             logo='https://place-hold.it/100x60',
             description=company['description'],
-            employee_count=company['employee_count']
+            employee_count=company['employee_count'],
         )
 
     for specialty in specialties:
         Specialty.objects.create(
             code=specialty['code'],
             title=specialty['title'],
-            picture='https://place-hold.it/100x60'
+            picture='https://place-hold.it/100x60',
         )
 
     for job in jobs:
@@ -35,5 +35,5 @@ if __name__ == '__main__':
             description=job['description'],
             salary_min=job['salary_from'],
             salary_max=job['salary_to'],
-            published_at=datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2]))
+            published_at=datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2])),
         )

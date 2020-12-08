@@ -58,11 +58,8 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-jobs/admin.py
 jobs/tests.py
-jobs/templates/jobs/test.json
-jobs/templates/jobs/company-create.html
-jobs/templates/jobs/company-edit.html
+
 
 # Flask stuff:
 instance/
@@ -132,4 +129,3 @@ dmypy.json
 .pyre/
 
 .idea/
-static/admin
